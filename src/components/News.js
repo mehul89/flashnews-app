@@ -46,7 +46,7 @@ class News extends Component {
   async fetchData() {
     try {
       const { country, category, pageSize } = this.props;
-      const url = `http://localhost:5000/api/news?country=${country}&category=${category}&pageSize=${pageSize}`;
+      const url = `https://flashnews-seven.vercel.app/api/news?country=${country}&category=${category}&pageSize=${pageSize}`;
 
       let data = await fetch(url);
       let parsedData = await data.json();

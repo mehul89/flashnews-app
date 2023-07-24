@@ -32,5 +32,5 @@ app.get('/api/news', async (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+  console.log(`Server is running on https://flashnews-seven.vercel.app/`);
 });
