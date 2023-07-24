@@ -60,7 +60,7 @@ export class Footer extends Component {
                         </div>
                     </div>
                     <div className="text-center mt-3">
-                        All rights reserved &copy; {new Date().getFullYear()} Created by <a><span style={{ color: 'red', fontFamily: 'cursive', fontWeight: '2px' }}> Mehul  Chapaneri ❤</span></a>
+                        All rights reserved &copy; {new Date().getFullYear()} Created by <span style={{ color: 'red', fontFamily: 'cursive', fontWeight: '2px' }}> Mehul  Chapaneri ❤</span>
                     </div>
                 </footer>
             </>
