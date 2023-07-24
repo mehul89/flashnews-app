@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import './App.css';
 import Navbar from './components/Navbar';
 import News from './components/News';
@@ -27,6 +28,7 @@ function App() {
   return (
     <>
       <Router>
+      <Analytics />
         <Navbar handleDarkModeToggle={handleDarkModeToggle} darkMode={darkMode} />
         <Routes>
           <Route exact path="/" element={<News pageSize={5} country="in" key="general" category="general" darkMode={darkMode} />} />
