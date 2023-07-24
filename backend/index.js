@@ -13,11 +13,11 @@ app.use(cors());
 // Define a route for fetching news headlines
 app.get('/api/news', async (req, res) => {
   try {
-    const { country, category, pageSize } = req.query;
+    const { country, category, pageSize, page } = req.query;
     const apiKey = 'process.env.NEWS_API_KEY'; // Replace with your News API key
 
     // Construct the URL for the News API request
-    const apiUrl = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}&pageSize=${pageSize}`;
+    const apiUrl = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}&pageSize=${pageSize}&page=${page}`;
 
     // Make a GET request to the News API
     const response = await axios.get(apiUrl);
