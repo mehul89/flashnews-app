@@ -8,7 +8,9 @@ const port = 5000; // Change this port as needed
 app.use(express.json());
 
 // Enable CORS for all routes (you can restrict it to specific routes if needed)
-app.use(cors());
+app.use(cors({
+  origin: 'https://flashnews-react.vercel.app'
+}));
 
 // Define a route for fetching news headlines
 app.get('/api/news', async (req, res) => {
